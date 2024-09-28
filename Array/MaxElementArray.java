@@ -1,33 +1,25 @@
 package javalab28;
 
-import java.util.Scanner;
-
 public class MaxElementArray {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		int[] a = { 1, 2, 3, 4, 5, 6 };
 		int max = 0;
-		System.out.println("How many Element You want Enter in Array:");
-		int n = sc.nextInt();
-
-		int A[] = new int[n];
-
-		System.out.println("Enter " + n + " Elements:");
-
-		for (int i = 0; i < A.length; i++) {
-			System.out.println("Enter Element At A[" + i + "]=");
-			A[i] = sc.nextInt();
-
-			if (A[i] > max) {
-				max = A[i];
+		int sum = 0;
+		double avg = 0;
+		for (int i = 1; i < a.length; i++) {
+			if (a[i] > max) {
+				max = a[i];
 			}
 		}
 
-		for (int i = 0; i < A.length; i++) {
-			System.out.println("Array Elements:A[" + i + "]=" + A[i]);
-
+		for (int i : a) {
+			sum += i;
+			avg = sum / a.length;
 		}
-		System.out.println("max No From Array:" + max);
+		System.out.println("Max Value= " + max);
+		System.out.println("Avg Value= " + avg);
+
 
 	}
 
