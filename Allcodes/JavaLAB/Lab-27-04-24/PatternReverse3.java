@@ -1,0 +1,20 @@
+package javalab;
+
+public class PatternReverse3 {
+
+	public static void main(String[] args) {
+		int row=5;
+		int col=5;
+		
+		for(int i=row;i>0;i--)
+		{
+			for(int j=col;j>0;j--)
+			{
+				System.out.print(j+" ");
+			}
+			col--;
+			System.out.println();
+
+	}
+	}
+}
