@@ -1,3 +1,4 @@
+//4.Count the number of occurrence of each element of an array.
 package javalab28;
 
 import java.util.Scanner;
